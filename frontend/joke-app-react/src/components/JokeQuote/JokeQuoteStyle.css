@@ -1,0 +1,19 @@
+.joke {
+    background-color: #FFFFFF;
+padding-left: 100px;
+padding-right: 100px;
+margin-top:50px;
+    color:#828282;
+}
+.line-1 {
+    width: 100%;
+    margin-top: 50px;
+    margin-bottom: 50px
+
+}
+.line-2 {
+    width: 100%;
+    margin-top: 100px;
+    margin-bottom: 0px;
+
+}
