@@ -1,5 +1,14 @@
 .banner-bg {
   background-color: #29b363;
-  height: 300px;
+  height: 250px;
   color: #ffffff;
+}
+.banner-text {
+  letter-spacing: 2px;
+  font-weight: 600;
+}
+.banner-text-small {
+  margin-top: 0px;
+  font-size: 14px;
+  font-weight: 600;
 }

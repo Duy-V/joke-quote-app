@@ -1,19 +1,20 @@
 .joke {
     background-color: #FFFFFF;
-padding-left: 100px;
-padding-right: 100px;
-margin-top:50px;
-    color:#828282;
+    padding-left: 100px;
+    padding-right: 100px;
+    margin-top: 70px;
+    color: #6D6D6D;
+    font-weight: 400;
+    margin-right: auto;
+    width: 70%;
+    margin-left: auto;
 }
-.line-1 {
-    width: 100%;
-    margin-top: 50px;
-    margin-bottom: 50px
+ 
 
-}
-.line-2 {
-    width: 100%;
-    margin-top: 100px;
-    margin-bottom: 0px;
+.line-1{
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
 
-}
+  }

@@ -76,7 +76,7 @@ function JokeQuote() {
       <div data-toggle={openModal} data-target="#showModel">
         <Button handleVotedQuote={handleVotedQuote} />
       </div>
-      <hr className="line-2"></hr>
+     
       <Modal onClick={handleRemoveCookie} />
     </div>
   );

@@ -1,3 +1,32 @@
 .header-bg {
 background-color: #FFFFFF;
+height:90px;
+}
+.logo{
+    width:78px;
+}
+.user-img {
+    width:70px;
+height: 68px;
+}
+.user-text {
+    margin-right: 10px
+}
+.logo-container, .account {
+    display: flex;
+    align-items: center;
+}
+.logo-container{
+    margin-right: 100px
+}
+.user {
+    color:#828282;
+font-size: 15px;
+font-weight: 500;
+}
+.name-user{
+    margin-top: -5px;
+    font-size: 15px;
+    font-weight: 600;
+    color:#212529
 }

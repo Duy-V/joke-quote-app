@@ -1,4 +1,16 @@
 * {
   margin: 0;
   padding: 0;
+
+}
+.line-2 {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  height: 1px;
+  background-color: #828282;
+  border: 0 none;
+  margin-top: 100px;
+  margin-bottom: 0px;
+
 }

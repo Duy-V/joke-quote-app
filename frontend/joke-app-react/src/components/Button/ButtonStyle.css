@@ -1,30 +1,45 @@
 .buttons {
   margin-top: 30px;
   margin-bottom: 50px;
+  margin-right: auto;
+  width: 70%;
+  margin-left: auto;
 }
 .btn-disliked {
   background-color: #29b363;
-  padding: 10px;
-  border-radius: 5px;
+  padding-right: 70px;
+  padding-left: 70px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   border: none;
   color: #ffff;
+  outline: none;
+  box-shadow: 0px 5px rgb(9, 145, 65);
+
 }
-.btn-disliked:hover {
+.btn-disliked:hover:focus {
   padding-right: 25px;
   padding-left: 25px;
   border: none;
   color: #ffff;
 }
+.btn-disliked:focus {
+  outline: none;
+}
+.btn-liked:focus {
+  outline: none;
+}
 .btn-liked {
   margin-right: 50px;
   border: none;
   background-color: #2c7edb;
-  padding-right: 17px;
-  padding-left: 17px;
+  padding-right: 80px;
+  padding-left: 80px;
   padding-top: 10px;
   padding-bottom: 10px;
-  border-radius: 5px;
   color: #ffff;
+  margin-right: 30px;
+  box-shadow: 0px 5px rgb(12 94 188);
 }
 .btn-liked:hover {
   padding-right: 25px;
