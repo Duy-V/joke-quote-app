@@ -1,9 +1,8 @@
 import React from "react";
 
-function Modal({ onClick }) {
+function Modal({ onClick, modal }) {
   return (
-    <div class="modal fade" id="showModel" data-toggle="modal">
-      {" "}
+    <div class={modal} tabindex="-1" role="dialog">
       <div class="modal-dialog">
         <div class="modal-content">
           <div class="modal-header">

@@ -35,16 +35,26 @@ function JokeQuote() {
     const result = param[randomIndex];
     return result;
   }
+function handleVotedQuote () {
+  if (cookies?.votedQuotes?.length === 4) {
+    setOpenModal("modal");
+    return;
+  }
+  if (!randomQuote) return;
+  setVotedQuotes([...votedQuotes, randomQuote]);
 
+}
   // function handling voting of joke quote
-  function handleVotedQuote() {
-    if (cookies?.votedQuotes?.length === 4) {
-      setOpenModal("modal");
-      return;
-    }
-    if (!randomQuote) return;
-    setVotedQuotes([...votedQuotes, randomQuote]);
+  function handleLikeQuote() {
+    handleVotedQuote()
     setQuotes((prev) => prev.filter((item) => item.id !== randomQuote.id));
+    randomQuote.liked = true
+    setRandomQuote(null);
+  }
+  function handleDislikeQuote() {
+    handleVotedQuote()
+    setQuotes((prev) => prev.filter((item) => item.id !== randomQuote.id));
+    randomQuote.disliked = true
     setRandomQuote(null);
   }
 
@@ -67,17 +77,16 @@ function JokeQuote() {
 
   useEffect(() => {
     setCookie("votedQuotes", votedQuotes);
+    console.log(votedQuotes)
   }, [votedQuotes]);
 
   return (
     <div className="joke">
       <p>{randomQuote?.content}</p>
       <hr className="line-1"></hr>
-      <div data-toggle={openModal} data-target="#showModel">
-        <Button handleVotedQuote={handleVotedQuote} />
-      </div>
-     
-      <Modal onClick={handleRemoveCookie} />
+      {cookies?.votedQuotes?.length ===4 ? (<Modal onClick={handleRemoveCookie} modal={openModal}/>): ( <div>
+        <Button handleLikeQuote={handleLikeQuote} handleDislikeQuote={handleDislikeQuote} />
+      </div>)}
     </div>
   );
 }
