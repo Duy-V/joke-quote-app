@@ -1,12 +1,12 @@
 .joke {
     background-color: #FFFFFF;
-    padding-left: 100px;
-    padding-right: 100px;
+    padding-left: 160px;
+    padding-right: 160px;
     margin-top: 70px;
-    color: #6D6D6D;
-    font-weight: 400;
+    color: #b1afaf;
+    font-weight: 500;
     margin-right: auto;
-    width: 70%;
+    width: 65%;
     margin-left: auto;
     margin-bottom: 50px;
 }
@@ -17,5 +17,5 @@
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 50px;
-
+    margin-top: 50px;
   }

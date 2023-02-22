@@ -9,9 +9,10 @@ function Footer() {
         do not constitute any form of advice. HLS assumes no responsibility for
         the accuracy of any particular statement and accepts no liability for
         any loss or damage which may arise from reliance on the information
-        contained on this site.{" "}
+        contained on this site.
       </p>
       <span className="coppy-right">Copyright 2021 HLS</span>
+     
     </div>
   );
 }

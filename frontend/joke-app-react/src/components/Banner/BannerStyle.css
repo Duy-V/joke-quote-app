@@ -1,3 +1,6 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap');
+
 .banner-bg {
   background-color: #29b363;
   height: 250px;
@@ -6,9 +9,10 @@
 .banner-text {
   letter-spacing: 2px;
   font-weight: 600;
+  font-family: 'Quicksand', sans-serif;
 }
 .banner-text-small {
-  margin-top: 0px;
-  font-size: 14px;
+  margin-top: 10px;
+    font-size: 14px;
   font-weight: 600;
 }
